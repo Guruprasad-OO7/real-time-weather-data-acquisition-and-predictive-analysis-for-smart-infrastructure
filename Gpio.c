@@ -18,6 +18,7 @@ void gpio_pin_mode(GPIO_TypeDef *port, uint8_t pin, uint8_t mode)
         *cr &= ~(0xF << shift);
         *cr |= (mode << shift);
     }
+    
 }
 uint8_t read_gpio_pin(GPIO_TypeDef *port, uint8_t pin) 
 {
